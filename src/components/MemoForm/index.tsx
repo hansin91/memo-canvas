@@ -61,7 +61,7 @@ function MemoForm({width, height, editorState, onChangeSize, onSetImage, onSetUp
         </Form.Group>
         <Form.Group controlId="formBasicText">
           <Form.Label>Content</Form.Label>
-          <div style={{maxWidth: `${width - 50}px`}}>
+          <div style={{maxWidth: `${width - 30}px`}}>
             {editorState &&
               <Editor
               wrapperClassName="rich-editor demo-wrapper"
