@@ -2,7 +2,7 @@ import './styles.scss'
 import React from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { Editor } from 'react-draft-wysiwyg'
-import { EditorState } from 'draft-js';
+import { EditorState } from 'draft-js'
 
 interface Props {
   width: number
@@ -15,7 +15,6 @@ interface Props {
 }
 
 function MemoForm({width, height, editorState, onChangeSize, onSetImage, onSetUpdated, onSetEditorState}: Props) {
-
   const handleInputContent = (e: any) => {
     onSetEditorState(e)
   }
@@ -61,7 +60,7 @@ function MemoForm({width, height, editorState, onChangeSize, onSetImage, onSetUp
         </Form.Group>
         <Form.Group controlId="formBasicText">
           <Form.Label>Content</Form.Label>
-          <div style={{maxWidth: `${width - 30}px`}}>
+          <div style={{maxWidth: `${width}px`}}>
             {editorState &&
               <Editor
               wrapperClassName="rich-editor demo-wrapper"

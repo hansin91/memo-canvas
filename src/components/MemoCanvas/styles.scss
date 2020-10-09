@@ -4,8 +4,22 @@
   }
 }
 
-
 #background-image {
   border-radius: 8px;
   width: 100% !important;
+}
+
+.memo-content {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  z-index: 10;
+  &-wrapper {
+    padding: 1.5rem;
+    word-wrap: break-word;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
